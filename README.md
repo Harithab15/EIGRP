@@ -16,7 +16,7 @@ This lab demonstrates **EIGRP (Enhanced Interior Gateway Routing Protocol)** con
 ---
 
 ##  Lab Topology
-![Lab Screenshot](./eigrp_lab_topology.png)
+![Lab Screenshot](./eigrp_lab_topology.jpeg)
 ##  Lab Requirements
 
 - EVE-NG Community or Pro Edition
