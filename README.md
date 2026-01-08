@@ -18,7 +18,7 @@ This lab demonstrates **EIGRP (Enhanced Interior Gateway Routing Protocol)** con
 
 ---
 
-## 🔧 Lab Requirements
+##  Lab Requirements
 
 - EVE-NG Community or Pro Edition
 - Cisco IOS image (e.g., `c3725-adventerprisek9-mz.124-15.T14.bin`)
@@ -28,7 +28,7 @@ This lab demonstrates **EIGRP (Enhanced Interior Gateway Routing Protocol)** con
 
 ---
 
-## 🌐 IP Addressing Table
+##  IP Addressing Table
 
 | Device | Interface | IP Address     | Connected To |
 |--------|-----------|----------------|---------------|
@@ -51,9 +51,9 @@ This lab demonstrates **EIGRP (Enhanced Interior Gateway Routing Protocol)** con
 
 ---
 
-## 🛠️ Step-by-Step Configuration
+## Step-by-Step Configuration
 
-### 🔹 PC1 & PC2
+###  PC1 & PC2
 ```bash
 # PC1
 IP Address: 192.168.1.10
@@ -68,7 +68,7 @@ Default Gateway: 192.168.2.1
 ```
 
 ### Router R1
-
+```bash
 hostname R1
 interface e0/0
  ip address 192.168.1.1 255.255.255.0
@@ -87,9 +87,10 @@ router eigrp 10
  network 192.168.1.0
  network 10.0.0.0
  no auto-summary
- 
- ### Router R2
+ ```
 
+ ### Router R2
+```bash
 hostname R2
 interface e0/0
  ip address 10.0.12.2 255.255.255.252
@@ -101,10 +102,10 @@ interface e0/1
 router eigrp 10
  network 10.0.0.0
  no auto-summary
+```
 
-
- 🔹 Router R3
-
+### Router R3
+```bash
  hostname R3
 interface e0/0
  ip address 10.0.13.2 255.255.255.252
@@ -117,8 +118,9 @@ router eigrp 10
  network 10.0.0.0
  no auto-summary
 
+```
 ### Router R4
-
+```bash
 hostname R4
 interface e0/0
  ip address 10.0.14.2 255.255.255.252
@@ -131,7 +133,10 @@ router eigrp 10
  network 10.0.0.0
  no auto-summary
 
+```
 ### Router R5
+
+```bash
 hostname R5
 interface e0/0
  ip address 10.0.25.2 255.255.255.252
@@ -151,10 +156,12 @@ router eigrp 10
  network 10.0.0.0
  no auto-summary
 
+```
+
 ### Verification Commands
 
 On each router:
-
+```bash
 # View EIGRP neighbors
 show ip eigrp neighbors
 
@@ -163,3 +170,5 @@ show ip route eigrp
 
 # Test connectivity (e.g., from PC1 to PC2)
 ping 192.168.2.10
+
+```
