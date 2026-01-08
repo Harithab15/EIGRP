@@ -1,13 +1,11 @@
-#  EIGRP LAB TOPOLOGY – EVE-NG
+#  Enhanced Interior Gateway Routing Protocol Lab- EVE-NG
 
 This lab demonstrates **EIGRP (Enhanced Interior Gateway Routing Protocol)** configuration using **5 routers** and **2 PCs** in the EVE-NG environment. It simulates redundant paths and validates EIGRP convergence, route learning, and failover behavior.
 
 ---
 
+
 ##  Topology Overview
-
-
-
 
 
 - **Routers:** R1 to R5 (with FastEthernet or GigabitEthernet interfaces)
@@ -17,6 +15,8 @@ This lab demonstrates **EIGRP (Enhanced Interior Gateway Routing Protocol)** con
 
 ---
 
+##  Lab Topology
+![Lab Screenshot](./eigrp_lab_topology.png)
 ##  Lab Requirements
 
 - EVE-NG Community or Pro Edition
